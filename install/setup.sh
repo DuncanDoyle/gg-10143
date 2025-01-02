@@ -14,6 +14,10 @@ kubectl apply -f apis/httpbin.yaml
 printf "\nDeploy AuthConfig ...\n"
 kubectl apply -f policies/apikey-authconfig.yaml
 
+# Deploy the correct API-Key secret
+printf "\Deploy correct API-Key secret ...\n"
+kubectl apply -f secrets/infra-apikey-secret.yaml
+
 # VirtualServices
 printf "\nDeploy VirtualServices ...\n"
 kubectl apply -f virtualservices/api-example-com-vs.yaml

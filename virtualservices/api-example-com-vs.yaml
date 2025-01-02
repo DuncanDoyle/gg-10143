@@ -17,14 +17,6 @@ spec:
           upstream:
             name: httpbin-httpbin-8000
             namespace: gloo-system
-      # optionsConfigRefs:
-      #   delegateOptions:
-      #   - name: cors-routeoptions
-      #     namespace: gloo-system
-    # optionsConfigRefs:
-    #   delegateOptions:
-    #   - name: cors-virtualhostoptions
-    #     namespace: gloo-system
     options:
       extauth:
         configRef:
